@@ -3,12 +3,15 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-}
+    font-family: 'Lato', sans-serif;}
 
-.clear-fix{
-    clear: both;
-}
+.clearfix{
+    clear: both;}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;}
 
 /* typography */
 
@@ -39,11 +42,118 @@ h6{
 
 /* layout */
 
-header{
+/* header{
     background-color: rgb(236, 236, 218);
+} */
+
+#app-row{
+    /* background-color: yellow; */
+    height: 80px;
+}
+#nav-row{
+    background-color: rgb(245, 245, 235);
+}
+#misc-row{
+    background-color: rgb(231, 159, 110);
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
 }
 
-main{
+#app-row>.container{
+    /* background-color: red; */
+    height: 100%;
+    padding: 10px 0;
+}
+
+#logo{
+    height: 60px;
+}
+
+#app-row>.container>.wrapper{
+    float: right;
+    /* background-color: green; */
+    width: 70%;
+    height: 100%;
+}
+
+/* #app-row>.container>.wrapper>.row:first-child{
+    background-color: blue;
+} */
+
+#app-row>.container>.wrapper>.row:last-child{
+    padding-top: 10px;
+    /* background-color: white; */
+}
+
+#nav-lang li{
+    float: left;
+    padding-left: 20px;
+}
+
+#nav-lang li:hover a{
+    color: #ff9d1e;
+}
+
+#nav-lang{
+    float: right;
+}
+
+nav>li>a{
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+#main-nav{
+    float: left;
+    padding-top: 10px;
+}
+
+#smi-container{
+    float: right;
+    color: white;
+    /* background-color: aquamarine; */
+}
+
+#main-nav li{
+    float: left;
+    padding: 0 25px;
+}
+
+#smi-container ul li{
+    float: left;
+    padding: 5px;
+    /* background-color: white; */
+    margin-left: 8px;
+}
+
+#smi-container ul li:first-child{
+    background-color: blue;
+}
+
+#smi-container ul li:nth-child(2){
+    background-color: green;
+}
+
+#smi-container ul li:nth-child(3){
+    background-color: lightblue;
+}
+
+#smi-container ul li:nth-child(4){
+    background-color: red;
+}
+
+#smi-container ul li ion-icon{
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+
+/* main{
     background-color: green;
 }
 
@@ -61,7 +171,7 @@ nav, ul{
 }
 
 /* Header */
-#top-row{
+/* #top-row{
     padding: 10px 0;
     height: 80px;
 }
@@ -133,4 +243,4 @@ nav li:hover{
 
 #smi-container li ion-icon{
     vertical-align: baseline;
-}
+}  */
