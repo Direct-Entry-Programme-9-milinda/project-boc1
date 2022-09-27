@@ -13,34 +13,28 @@
     content: "";
     clear: both;}
 
-/* typography */
+/* TYPOGRAPHY */
 
 h1{
     font-size: 1.8rem;
-    line-height: 2.2rem;
-}
+    line-height: 2.2rem;}
 h2{
     font-size: 1.6rem;
-    line-height: 2.0rem;
-}
+    line-height: 2.0rem;}
 h3{
     font-size: 1.4rem;
-    line-height: 1.8rem;
-}
+    line-height: 1.8rem;}
 h4{
     font-size: 1.2rem;
-    line-height: 1.6rem;
-}
+    line-height: 1.6rem;}
 h5{
     font-size: 0.9rem;
-    line-height: 1.1rem;
-}
+    line-height: 1.1rem;}
 h6{
     font-size: 0.8rem;
-    line-height: 1rem;
-}
+    line-height: 1rem;}
 
-/* layout */
+/* LAYOUT */
 
 /* header{
     background-color: rgb(236, 236, 218);
@@ -51,10 +45,13 @@ h6{
     height: 80px;
 }
 #nav-row{
-    background-color: rgb(245, 245, 235);
+    background-color: rgb(37, 37, 35);
+    color: #ff9d1e;
 }
 #misc-row{
-    background-color: rgb(231, 159, 110);
+    padding: 5px;
+    text-align: right;
+    background-color: #eeb66c;
 }
 .container{
     width: 1170px;
@@ -150,6 +147,69 @@ nav>li>a{
     color: white;
 }
 
+#nav-row nav li{
+    float: left;
+}
+
+#nav-row nav li a{
+    display: inline-block;  /* top and bottom wltat padding apply we, normally left, right wtrai */
+    padding: 15px;
+    color: white;
+}
+
+#nav-row nav li a:hover{
+    background-color: #ff9d1e;
+}
+
+#nav-row nav li a{
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+}
+
+#nav-row nav li a:hover:after{
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 6px solid #ff9d1e;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 100%;
+}
+
+/* #misc-row div button{
+    padding: 10px;
+    text-align: right;
+    background-color: #107ece;
+    color: white;
+    border-radius: 4px;
+}
+
+#misc-row div button:hover{
+    background-color: #;
+}
+ */
+
+#misc-row .btn{
+    display: inline-block;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-bottom: 2px solid black;
+    padding: 0.10px;
+    border-radius: 4px;
+    line-height: 40px;
+    text-decoration: none;
+    /* font-size: 0.7px; */
+
+}
+
+#misc-row .btn:hover{
+    background-color: darkblue;
+}
 
 
 
@@ -170,7 +230,8 @@ nav, ul{
     overflow: hidden;
 }
 
-/* Header */
+/* ----------------------Header----------------------------- */
+
 /* #top-row{
     padding: 10px 0;
     height: 80px;
