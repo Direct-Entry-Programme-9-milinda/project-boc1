@@ -412,9 +412,139 @@ main>.row:first-child>.container>.col:first-child>ul li a:hover img{
     border: 3px solid #ff9d1e; 
 }
 
+main>.row:nth-child(2)>.container>.col{
+    /* padding-top: 20px; */
+    float: left;
+    height: 200px;
+}
 
+main>.row:nth-child(2)>.container>.col:first-child{
+    height: 387px;
+    width: 75%;
+    /* background-color: red; */
+}
 
+main>.row:nth-child(2)>.container>.col:last-child{
+    height: 387px;
+    width: 25%;
+    /* background-color: green; */
+}
 
+main>.row:nth-child(2)>.container>.col:last-child svg{
+    height: 30px;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li{
+    display: table;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 0.9rem;
+    /* padding: 10px 20px 10px 10px; */
+    border-bottom: 1px solid #ccc;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul{
+    border-top: 1px solid #ececec;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover{
+    background-color: #525252;
+}
+
+/* main>.row:nth-child(2)>.container>.col:last-child>ul>li>a:hover{
+    color: #ff9d1e;
+} */
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover a,
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover svg{
+    color: #ff9d1e;
+    fill: #ff9d1e;
+
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a{
+    display: table-row;
+    text-decoration: none;
+    color: black;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div{
+    display: table-cell;
+    padding:10px 20px 10px 10px;
+    /* border: 1px solid black; */
+    vertical-align: middle;
+    line-height: 1.1rem;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
+    width: 90%;
+}
+
+#slider{
+    padding: 20px 10px 0;
+    height: 387px;
+    overflow-y: hidden;
+}
+
+.slide{
+    position: relative;
+    background-repeat: no-repeat;
+    height: 388px;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    width: 100%;
+}
+
+.slide .prev, .slide .next{
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    background-color: rgba(128,130,133,0.9);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.slide .prev:hover, .slide .next:hover{
+    background-color: rgba(128,130,133,0.8);
+}
+.slide .prev{
+    left: 10px;
+}
+.slide .next{
+    right: 10px;
+}
+
+.slide ion-icon{
+    color: white;
+    vertical-align: sub;
+}
+
+#slide-1{
+    background-image: url(https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg);
+}
+#slide-2{
+    background-image: url(https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg);
+}
+#slide-3{
+    background-image: url(https://boc.lk/image/data/Banner/SDA-2022-09.jpeg);
+}
+#slide-4{
+    background-image: url(https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg);
+}
+#slide-5{
+    background-image: url(https://boc.lk/image/data/Banner/green-loan-2022.jpeg);
+}
+#slide-6{
+    background-image: url(https://boc.lk/image/data/Banner/power-branch-close-2022-En-1.jpg);
+}
+
+.slide .prev:hover, .slide .next:hover{
+    background-color: gray;
+}
 
 
 
